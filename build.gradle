@@ -9,7 +9,7 @@
 plugins {
     // Apply the java plugin to add support for Java
     id 'com.gradle.build-scan' version '2.1'
-    id 'java'
+    
     id "org.sonarqube" version "2.7.1"
     id 'jacoco'
     id 'java-library'
@@ -56,9 +56,9 @@ test {
     useJUnitPlatform()
    
    testLogging{
-         events 'passed', 'skipped', 'failed'
+         events = ["passed", "skipped", "failed"]
     }
-   //finalizedBy(jacocoTestreport)
+   finalizedBy jacocoTestReport
 }
 // Define the main class for the application
 mainClassName = 'SruJunit.App'
