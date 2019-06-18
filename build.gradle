@@ -10,7 +10,9 @@ plugins {
     // Apply the java plugin to add support for Java
     id 'com.gradle.build-scan' version '2.1'
     id 'java'
-    
+    id "org.sonarqube" version "2.7.1"
+    id 'jacoco'
+    id 'java-library'
     // Apply the application plugin to add support for building an application
     id 'application'
 }

@@ -22,8 +22,7 @@ public class AppTest {
 	}
 	@Test
 	public void test1() {
-		//assertThrows(ArithmeticException.class,()->a.div(1,0),"Divide by zero Exception");
-		//assertThrows(ArithmeticException.class,()->a.div(1,0),"Divide by zero Exception");
+		assertThrows(ArithmeticException.class,()->a.div(1,0),"Divide by zero Exception");
 	}
 
 }
