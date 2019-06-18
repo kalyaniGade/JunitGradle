@@ -62,3 +62,11 @@ test {
 }
 // Define the main class for the application
 mainClassName = 'SruJunit.App'
+jacocoTestReport{
+group = "build"
+reports{
+xml.enabled false
+csv.enabled false
+html.destination file("${buildDir}/jacocoHtml")
+}
+}
