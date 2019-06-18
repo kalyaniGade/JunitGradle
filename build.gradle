@@ -52,6 +52,11 @@ dependencies {
 }
 test {
     useJUnitPlatform()
+   
+   testLogging{
+         events 'passed', 'skipped', 'failed'
+    }
+   //finalizedBy(jacocoTestreport)
 }
 // Define the main class for the application
 mainClassName = 'SruJunit.App'
